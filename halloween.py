@@ -1,5 +1,6 @@
 # Corey Miller
 # Victor Pallares
 # Matt Gonzalez
-import sleep
+import time
 import sys
+
