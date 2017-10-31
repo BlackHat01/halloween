@@ -14,4 +14,14 @@ print("""Dr. Junkenstein laughed as his minions arose for tonight was the night 
 time.sleep(5)
 print("""Junkenstein's Revenge""")
 time.sleep(3)
+def selectHero():
+    input("""
+    Select your hero
 
+        Soldier: 76
+        Mccree
+        Ana
+        Hanzo
+
+    (Enter exact name): """)
+selectHero()
