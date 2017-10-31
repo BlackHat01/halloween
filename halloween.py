@@ -3,7 +3,16 @@
 # Matt Gonzalez
 import time
 import sys
-def main():
+from pygame import *
+mixer.init()
+
+
+def main():   
+    mixer.music.load('sound.ogg')
+    mixer.music.play()
+
+while mixer.music.get_busy():
+    time.Clock().tick(10)
     time.sleep(1)
     print("""Our tale begins in Eichenwalde where the lord of the castle has called for""")
     time.sleep(4)
