@@ -26,15 +26,25 @@ def selectHero():
     (Enter exact name): """)
     if hero == ("Mccree"):
         heroName=("Mccree")
+        heroString=("You have selected Mccree, the Gunslinger of the wild west.")
     elif hero == ("Ana"):
-        heroName=("Mccree")
+        heroName=("Ana")
+        heroString=("You have selected Ana, the Alchemist who heals her fellow teammates.")
     elif hero == ("Soldier 76"):
-        heroName=("Mccree")
+        heroName=("Soldier: 76")
+        heroString=("You have selected Soldier: 76, the Soldier who fights for what he believes in: Justice.")
     elif hero == ("Hanzo"):
-        heroName=("Mccree")
+        heroName=("Hanzo")
+        heroString=("You have selected Hanzo, the Archer of the East who was born a dragon.")
     else:
         print("Invalid selection.")
         selectHero()
-        
+    print(heroString)
+    time.sleep(3)
+    roundOne(heroName)
+
+def roundOne(heroName):
+
+
 selectHero()
- 
+
