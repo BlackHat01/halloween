@@ -50,8 +50,8 @@ def roundOne(heroName):
     Zomnics approach.
     Will you:
                       
-            1. Attack
-            2. Let teammates attack
+        1. Attack
+        2. Let teammates attack
 
     (Enter choice number): """))
     print("The first of the zomnics have been destroyed.")
@@ -64,9 +64,9 @@ def roundTwo(heroName):
     More zomnics approach, and a zombardier attacks your Mccree.
     Will you:
     
-    1. Heal your teammate: Mccree
-    2. Kill the zombardier
-    3. Kill the zomnics
+       1. Heal your teammate: Mccree
+       2. Kill the zombardier
+       3. Kill the zomnics
 
     (Enter choice number): """))
         if zomnicTwo == 1:
