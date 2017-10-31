@@ -28,16 +28,16 @@ def selectHero():
     (Enter exact name): """)
     if hero == ("Mccree"):
         heroName=("Mccree")
-        heroString=("You have selected Mccree, the Gunslinger of the wild west.")
+        heroString=("The wandering Gunslinger, seeking adventure.")
     elif hero == ("Ana"):
         heroName=("Ana")
-        heroString=("You have selected Ana, the Alchemist who heals her fellow teammates.")
+        heroString=("The reclusive Alchemist, skilled in the healing arts.")
     elif hero == ("Soldier 76"):
         heroName=("Soldier: 76")
-        heroString=("You have selected Soldier: 76, the Soldier who fights for what he believes in: Justice.")
+        heroString=("The nameless soldier, veteran of countless battles.")
     elif hero == ("Hanzo"):
         heroName=("Hanzo")
-        heroString=("You have selected Hanzo, the Archer of the East who was born a dragon.")
+        heroString=("An archer from the east, trying to escape his past.")
     else:
         print("Invalid selection.")
         selectHero()
@@ -104,7 +104,40 @@ def roundTwo(heroName):
         else:
             print("Invalid selection.")
             roundTwo(heroName)
+def bossBattle(heroName):
+    print("As the battle raged, Dr. Junkenstein himself made a grand appearance!")
+    time.sleep(3)
+    print("You will all regret the day you laughed at Dr. Jamison Junkenstein!")
+    time.sleep(3)
+    finalBattle = int(input("""
+    Dr. Junkenstein lobs his bombs from the ramparts, while zomnics zerg towards the gate.
+    Will you:
+
+    1. Attack the zomnics
+    2. Focus your team on on Dr. Junkstein
+
+    (Enter choice number): """))
+    if finalBattle == 1:
+        time.sleep(2)
+        print("""
+
+    You manage to avoid the flying bombs landing around you, and save the door.
+    However, The bombs keep coming from the ramparts. You and your team focus your
+    attack on Dr. Junkenstein and at last, he falls from the ramparts, cold and dead.
+    """)
+        time.sleep(8)
+        print("The lord of the castle thanks you,",(heroName),", for your bravery in defending his castle.")
+        time.sleep(5)
+        reset = input("The end! Would you like to play again? [y/n]: ")
+        if reset == ("y"):
+            main()
+        else:
+            sys.exit("Thank you for playing!")
     
+    elif finalBattle == 2:
+        print("While you are distracted, zomnics sneak by, and break down the door! You have failed.")
+        time.sleep(3)
+        main()
 main()
 
 
